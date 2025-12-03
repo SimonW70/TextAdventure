@@ -1,0 +1,134 @@
+
+{
+  "start_scene": "Level 1 Ocean Floor",
+  "scenes": [
+    {
+      "scene_name": "Level 1 Ocean Floor",
+      "scene_description": "You are in the ocean and you are running out of air. \nYou see a Castle.",
+      "actions": [
+        {
+          "action_command": "Enter",
+          "next_scene": "enter castle"
+        },
+        {
+          "action_command": "Run",
+          "next_scene": "run away"
+        }
+      ]
+    },
+    {
+      "scene_name": "enter castle",
+      "scene_description": "Well Done! You have found an air pocket and survived.\nYou See a Trident!",
+      "actions": [
+        {
+          "action_command": "Take trident",
+          "next_scene": "part two"
+        },
+        {
+          "action_command": "Leave trident",
+          "next_scene": "leave trident"
+        }
+      ]
+    },
+    {
+      "scene_name": "leave trident",
+      "scene_description": "Oh No! Atlantians are coming you need to hide.",
+      "actions": [
+        {
+          "action_command": "Take trident",
+          "next_scene": "part two"
+        },
+        {
+          "action_command": "Leave trident",
+          "next_scene": "part three"
+        },
+        {
+          "action_command": "Hide",
+          "next_scene": "other way"
+        }
+      ]
+    },
+    {
+      "scene_name": "part two",
+      "scene_description": "",
+      "actions": [
+        {
+          "action_command": "",
+          "next_scene": ""
+        },
+        {
+          "action_command": "",
+          "next_scene": ""
+        },
+        {
+          "action_command": "",
+          "next_scene": ""
+        }
+      ]
+    },
+    {
+      "scene_name": "run away",
+      "scene_description": "Unfortunately you have drowned!\nThe End",
+      "actions": [
+        {
+          "action_command": "restart",
+          "next_scene": "Level 1 Ocean Floor"
+        }
+      ]
+    },
+    {
+      "scene_name": "part three",
+      "scene_description": "",
+      "actions": [
+        {
+          "action_command": "1",
+          "next_scene": "end"
+        },
+        {
+          "action_command": "2",
+          "next_scene": "end"
+        }
+      ]
+    },
+    {
+      "scene_name": "other way",
+      "scene_description": "It has been almost an hour since the Atlanteans have left and you are starting to run out of oxygen.\nYou hear a sound from outside and go out to explore.\nAfter Hours of wondering around you come across a massive bubble with a reflective coating.\nHowever you start to hear dolphins heading your direction with what looks to be Atlanteans riding upon them.",
+      "actions": [
+        {
+          "action_command": "Run",
+          "next_scene": "Run"
+        },
+        {
+          "action_command": "Surrender",
+          "next_scene": "Surrender"
+        }
+      ]
+    },
+    {
+      "scene_name": "Surrender",
+      "scene_description": "You swim towards them and surrender.\n They put you in hand cuffs and then you are knocked out.Next Level!",
+      "actions": [
+        {
+          "action_command": "Continue",
+          "next_scene": "end"
+        }
+      ]
+    },
+    {
+      "scene_name": "Run",
+      "scene_description": "You try to run but they soon spot you and start to chase you.You feel a tingling sensation and pass out.Next Level",
+      "actions": [
+        {
+          "action_command": "Continue",
+          "next_scene": "end"
+        }
+      ]
+    },
+    {
+      "scene_name": "end",
+      "scene_description": "This is the end for now",
+      "actions": [
+      ]
+    }
+  ]
+}
