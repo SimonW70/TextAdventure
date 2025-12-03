@@ -21,19 +21,19 @@ current_scene = scene_data[first_scene_name]
 def list_actions(actions):
     number = 1
     for action in actions:
-        cool_print(f"{number}) {action.command}")
+        cool_print(str(number)+") "+action.command)
         number += 1
 
 
 def get_user_action(n):
     while True:
-        choice = input(f"Enter choice (1-{n}): ")
+        choice = input("Enter choice (1-"+str(n)+"): ")
         try:
             chosen_number = int(choice)
             if 1 <= chosen_number <= n:
                 return chosen_number
 
-            print(f"Invalid choice.  Please enter a number between 1-{n}.")
+            print("Invalid choice.  Please enter a number between 1-"+str(n)+".")
 
         except ValueError:
             cool_print("Please enter a number")
